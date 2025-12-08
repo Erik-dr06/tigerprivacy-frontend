@@ -10,7 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export const ThemeContext = createContext();
 
-export const API_BASE_URL = process.env.REACT_APP_API_URL || "https://backend-project-7qgd.onrender.com";
+export const API_BASE_URL = process.env.REACT_APP_API_URL || "https://tigerprivacy-backend-vo5e.onrender.com";
 
 
 function App() {
