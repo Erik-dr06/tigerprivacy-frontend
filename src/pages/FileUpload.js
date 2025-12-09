@@ -250,8 +250,7 @@ export default function FileUpload() {
         <button className="requestInfo" onClick={() => setShowPopup(true)}>
           How do I request my data?
         </button>
-
-        // This is for the AI opt-in/out feature. Just shows the option and what you are opting into
+            
         <div style={{ marginTop: "20px", marginBottom: "10px", textAlign: "center" }}>
           <label style={{ cursor: "pointer" }}>
             <input
