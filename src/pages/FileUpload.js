@@ -5,6 +5,7 @@ import GradientText from "../components/GradientText";
 import BurgerMenu from "./BurgerMenu";
 import Loader from "../Loader";
 import { ThemeContext } from "../App";
+import { API_BASE_URL } from "../App";
 
 export default function FileUpload() {
   const [name, setName] = useState("");
@@ -142,10 +143,11 @@ export default function FileUpload() {
       formData.append("sendToAI", sendToAI ? "true" : "false");
 
       setProgress(85);
-      const response = await fetch("http://localhost:8000/upload", {
+      const response = await fetch(`${API_BASE_URL}/upload`, {
         method: "POST",
         body: formData,
-      });
+        });
+
 
       setProgress(95);
       const result = await response.json();
